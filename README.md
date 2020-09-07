@@ -22,6 +22,7 @@ Once finished:
 
 - In the folder from where you ran the git command, run `cd holobot` and then run `npm install`, this will install all required packages, then it will run the installer.
 
+- Your Bot Token are placed inside `.env` file.
 ## Starting
 
 To start the bot, in the command prompt, run the following command:
