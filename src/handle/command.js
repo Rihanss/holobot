@@ -20,7 +20,7 @@ module.exports = async(client, message) => {
     let blacklist = await client.blacklist.get(message.author.id);
     if(blacklist) {
     let embed = new MessageEmbed()
-    .setAuthor(client.user.username, client.user.displayAvatarURL)
+    .setAuthor(client.user.username, client.user.displayAvatarURL({dynamic: true}))
     .setTitle(`**Holo**`)
     .setDescription(stripIndents `
 You are currently banned from Holo.
