@@ -37,7 +37,8 @@ To add your bot to your server go to this site
 ## Issue:
 
 First of all, Holo is using quick.db and Enmap as her database. Installation guide for quick.db on windows can be found [Here](https://github.com/plexidev/quick.db/issues/152#issuecomment-543740060)
-Enmap installation, it can be found [Here](https://enmap.evie.dev/install)
+
+Enmap installation, can be found [Here](https://enmap.evie.dev/install)
 
 You need to install **better-sqlite3** to continue using **quick.db** and **enmap**
 > npm install better-sqlite3
