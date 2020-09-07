@@ -1,0 +1,30 @@
+2020-04-10 00:25:03.561  INFO 1363 --- [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2020-04-10 00:25:04.377  INFO 1363 --- [lava-daemon-pool-info-loader-2-thread-16] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: คั้นกู
+2020-04-10 00:25:09.725  INFO 1363 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"op":"play","guildId":"543087304781201419","track":"QAAA6QIAguC4hOC4seC5iOC4meC4geC4uSBPc3Qu4LmA4Lie4Lij4Liy4Liw4LmA4Lij4Liy4LiE4Li54LmI4LiB4Lix4LiZIDJnZXRoZXIgVGhlIFNlcmllcyAtIOC5hOC4muC4o+C5jOC4lyDguKfguIrguLTguKPguKfguLTguIrguI3guYwADUdNTVRWIFJFQ09SRFMAAAAAAARJqAALbGVldkV4cEE4ZWMAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1sZWV2RXhwQThlYwAHeW91dHViZQAAAAAAAAAA"}
+2020-04-10 00:25:09.729  INFO 1363 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"op":"volume","guildId":"543087304781201419","volume":100}
+2020-04-10 00:25:10.209  INFO 1363 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"op":"voiceUpdate","guildId":"543087304781201419","sessionId":"2f10d4f5f3c945f955e376c202221ec7","event":{"token":"768007c20ae2e85d","guild_id":"543087304781201419","endpoint":"singapore330.discord.media:80"}}
+2020-04-10 00:25:10.904 ERROR 1363 --- [lava-daemon-pool-playback-329-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Error in playback of leevExpA8ec
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:43) ~[lavaplayer-1.3.22.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:102) ~[lavaplayer-1.3.22.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$1(DefaultAudioPlayerManager.java:349) ~[lavaplayer-1.3.22.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.IOException: Received non-success response code 404
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.validateResponseCode(YoutubeSignatureCipherManager.java:155) ~[lavaplayer-1.3.22.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.getCipherKeyFromScript(YoutubeSignatureCipherManager.java:140) ~[lavaplayer-1.3.22.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.getValidUrl(YoutubeSignatureCipherManager.java:101) ~[lavaplayer-1.3.22.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:102) ~[lavaplayer-1.3.22.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:63) ~[lavaplayer-1.3.22.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:90) ~[lavaplayer-1.3.22.jar!/:na]
+	... 4 common frames omitted
+
+2020-04-10 00:25:12.174  INFO 1363 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"op":"destroy","guildId":"543087304781201419"}
+2020-04-10 01:03:16.228  INFO 1363 --- [XNIO-1 task-11] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2020-04-10 01:03:16.860  INFO 1363 --- [lava-daemon-pool-info-loader-2-thread-16] lavalink.server.player.AudioLoader       : Loaded playlist จีจี้
+2020-04-10 01:03:16.906  INFO 1363 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"op":"play","guildId":"685988248430051418","track":"QAAAtQIASTdEYXlzIENyYXp5IC0g4LmB4LiE4LmI4LmE4LiU4LmJ4Lij4Lix4LiB4LmA4LiY4LitIChPZmZpY2lhbCBNdXNpYyBWaWRlbykAEjdEYXlzQ3JhenlPZmZpY2lhbAAAAAAABFF4AAtqSmRHejI5VlYzWQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWpKZEd6MjlWVjNZAAd5b3V0dWJlAAAAAAAAAAA="}
+2020-04-10 01:03:16.908  INFO 1363 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"op":"volume","guildId":"685988248430051418","volume":100}
+2020-04-10 01:03:17.159  INFO 1363 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"op":"voiceUpdate","guildId":"685988248430051418","sessionId":"2f10d4f5f3c945f955e376c202221ec7","event":{"token":"e35bf321b45eca37","guild_id":"685988248430051418","endpoint":"singapore717.discord.media:80"}}
+2020-04-10 01:08:01.348  INFO 1363 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"op":"destroy","guildId":"685988248430051418"}

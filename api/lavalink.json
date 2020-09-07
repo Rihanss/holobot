@@ -1,0 +1,17 @@
+{
+  "apps": [{
+    "name": "Lavalink",
+    "cwd": ".",
+    "args": [
+      "-jar",
+      "Lavalink.jar"
+    ],
+    "env": {
+    },
+    "script": "/usr/bin/java/",
+    "node_args": [],
+    "log_date_format": "h:mma D/M/YY",
+    "exec_interpreter": "none",
+    "exec_mode": "fork"
+  }]
+}
