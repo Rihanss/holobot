@@ -1,10 +1,6 @@
 {
   "bot_prefix": "z-",
   "embed_color": "RANDOM",
-<<<<<<< HEAD
   "owners_id": ["YourUserID", "SecondUserID"],
-=======
-  "owners_id": ["YourID", "SecondUserID"],
->>>>>>> b1f86ae8db61f23532ce8981a1f47020ca907130
   "bot_admin": []
 }
