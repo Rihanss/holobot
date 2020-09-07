@@ -16,7 +16,7 @@ This project is licensed under the MIT License - see the `LICENSE.md` file for d
 
 In a command prompt in your project's folder (wherever that may be) run the following:
 
-`git clone`
+`git clone https://github.com/ryanshds/holobot.git`
 
 Once finished:
 
@@ -43,10 +43,13 @@ You need to install **better-sqlite3** to continue using **quick.db** and **enma
 If you encounter error, make sure to install **Visual Studio C++ Build Tools**
 Windows:
 > npm i -g --add-python-to-path --vs2015 --production windows-build-tools
+
 > It's very important that this be run in the administrative prompt, and not a regular one.
+
 Linux:
 > sudo apt-get install build-essential
 
 Everything is now done, you now can run
 > npm install
 
+Please let me know if you encounter another issue
