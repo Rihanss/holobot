@@ -10,8 +10,6 @@ const fs = require('fs');
 module.exports = async(client, message) => {
     let dxp = await db.fetch(`doublexp_${message.author.id}`);
     let dcash = await db.fetch(`doublecash_${message.author.id}`);
-    //let hook = new Discord.WebhookClient("616276846564081717", "Je_fpKH54-ACrD00AFEszwsISFQ2av_LyVnaTrsRCxe5wO5C3so-pVxAku9EUy1wHl_K");
-    let channel = client.channels.cache.get("616275210324279316");
 
     let prefix = message.content.startsWith(bot_prefix) ? bot_prefix : `${client.user.toString()} `;
     let color = embed_color;
@@ -29,9 +27,6 @@ You are currently banned from Holo.
 
 **Reason:** ${blacklist.reason || "No reason"}
 **Banned by:** ${blacklist.author || "No one"}
-
-**Wrongful Ban?**
-Please appeal at **[our form.](https://forms.gle/iUYotw9cRBv3zdf39)**
 `)
     .setTimestamp()
     .setColor(`RED`)
@@ -68,7 +63,6 @@ Please appeal at **[our form.](https://forms.gle/iUYotw9cRBv3zdf39)**
       console.error(e)
     } finally {
       console.info(`[${new Date().toString().split(" ", 5).join(" ")}] HoloBot ➣ ${message.author.tag} | ${message.author.id} ran command ${cmd} at ${message.guild.name}`);
-  //    hook.send(`[${new Date().toString().split(" ", 5).join(" ")}] HoloBot ➣ ${message.author.tag} | **${message.author.id}** ran command **${cmd}** at ${message.guild.name} | **${message.guild.id}**`)
             
       if (timeout.has(message.author.id)) return;
       let balanceAdd = Math.floor(Math.random() * 20) + 1;
