@@ -5,7 +5,6 @@ const db = require("quick.db");
 
 module.exports = async(client, message) => {
     if(message.author.bot || !message.guild) return;
-
     let prefix = PREFIX.toLowerCase();
     let prefixMention = new RegExp(`^<@!?${client.user.id}> `);
     let msg = message.content.toLowerCase();

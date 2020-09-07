@@ -29,9 +29,6 @@ You are currently banned from Holo.
 
 **Reason:** ${blacklist.reason || "No reason"}
 **Banned by:** ${blacklist.author || "No one"}
-
-**Wrongful Ban?**
-Please appeal at **[our form.](https://forms.gle/iUYotw9cRBv3zdf39)**
 `)
     .setTimestamp()
     .setColor(`RED`)
@@ -54,7 +51,7 @@ Please appeal at **[our form.](https://forms.gle/iUYotw9cRBv3zdf39)**
       const expirationTime = timestamps.get(member.id) + cooldownAmount;
       if (now < expirationTime) {
         const timeLeft = (expirationTime - now) / 1000;
-        return message.channel.send(`<a:timer:477854358290038784> | **${member.user.username}**, ${opss} (Ratelimited)\n**You'll be able to use this command again in** **${timeLeft.toFixed(1)} seconds.**`).then(msg=>msg.delete(10000));
+        return message.channel.send(`**${member.user.username}**, ${opss} (Ratelimited)\n**You'll be able to use this command again in** **${timeLeft.toFixed(1)} seconds.**`).then(msg=>msg.delete(10000));
       };
       timestamps.set(member.id, now);
       setTimeout(() => timestamps.delete(member.id), cooldownAmount);
