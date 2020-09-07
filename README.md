@@ -5,7 +5,7 @@ Since the bot has been shut down with no plan on activating it, We as Developers
 **Feel free to contribute if there a mistake**
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ryanshds/holobot/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ryanshds/holobot/blob/master/LICENSE) file for details.
 
 ## Requirements
 - `git` command line ([Windows](https://git-scm.com/download/win)|[Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)|[MacOS](https://git-scm.com/download/mac)) installed
