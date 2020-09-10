@@ -9,7 +9,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## Requirements
 - `git` command line ([Windows](https://git-scm.com/download/win)|[Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)|[MacOS](https://git-scm.com/download/mac)) installed
-- `node` [Version 10.x or higher](https://nodejs.org)
+- `node` [Version 12.x or higher](https://nodejs.org)
 - `token` Required to start the bot obtain it [here](https://discordapp.com/developers/applications/)
 
 ## Downloading
