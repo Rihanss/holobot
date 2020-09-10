@@ -57,4 +57,4 @@ Linux:
 Everything is now done, you now can run
 > npm install
 
-Please let me know if you encounter another issue
+Please let me know if you encounter issue
